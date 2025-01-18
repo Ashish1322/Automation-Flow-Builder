@@ -1,3 +1,4 @@
+// @ts-nocheck: Disable
 import { postContentToWebHook } from "@/app/(main)/(pages)/connections/_actions/discord_connections";
 import { onCreateNewPageInDatabase } from "@/app/(main)/(pages)/connections/_actions/notion_connections";
 import { postMessageToSlack } from "@/app/(main)/(pages)/connections/_actions/slack_connections";

@@ -1,6 +1,6 @@
 "use client";
 import { AccordionContent } from "@/components/ui/accordion";
-import { ConnectionProviderProps } from "@/providers/connections-provider";
+import { ConnectionProviderProps } from "@/providers/connection-provider";
 import { EditorState } from "@/providers/editor-provider";
 import { nodeMapper } from "@/lib/types";
 import React, { useEffect, useState } from "react";
@@ -54,7 +54,6 @@ const ContentBasedOnTitle = ({
   const { selectedNode } = newState.editor;
   const title = selectedNode.data.title;
 
-  // @ts-ignore
   const nodeConnectionType: any = nodeConnection[nodeMapper[title]];
   if (!nodeConnectionType) return <p>Not connected</p>;
 
@@ -80,7 +79,7 @@ const ContentBasedOnTitle = ({
     console.log("second");
     async function fetchSlackMessage() {
       const workflowId = pathname.split("/").pop()!;
-      let result = await getWorflowSlackMessage(workflowId);
+      const result = await getWorflowSlackMessage(workflowId);
       if (result) {
         setMessage(result);
       }

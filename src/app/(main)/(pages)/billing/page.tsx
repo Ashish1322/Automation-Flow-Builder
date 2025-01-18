@@ -5,18 +5,18 @@ import { db } from "@/lib/db";
 import BillingDashboard from "./_components/billing-dashboard";
 
 type Props = {
-  searchParams?: { [key: string]: string | undefined };
+  searchParams?: Promise<{ [key: string]: string | undefined }>;
 };
 
 const Billing = async (props: Props) => {
-  const { session_id } = props.searchParams ?? {
+  const { session_id } = (await props.searchParams) ?? {
     session_id: "",
   };
 
   if (session_id) {
     const stripe = new Stripe(process.env.STRIPE_SECRET!, {
       typescript: true,
-      apiVersion: "2023-10-16",
+      apiVersion: "2024-12-18.acacia",
     });
 
     const session = await stripe.checkout.sessions.listLineItems(session_id);

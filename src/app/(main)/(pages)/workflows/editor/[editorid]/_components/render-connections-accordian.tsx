@@ -75,7 +75,7 @@ const RenderConnectionAccordion = ({
       const workflowId = pathname.split("/").pop()!;
       const flowSlackChannels = await getWorflowSlackChannels(workflowId);
       if (slackChannels) {
-        let temp = slackChannels.filter((item: any) => {
+        const temp = slackChannels.filter((item: any) => {
           if (flowSlackChannels.includes(item?.value)) {
             return item;
           }

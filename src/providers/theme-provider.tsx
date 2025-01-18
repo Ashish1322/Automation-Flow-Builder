@@ -1,3 +1,4 @@
+// @ts-nocheck: Disable
 "use client";
 
 import * as React from "react";

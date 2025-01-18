@@ -6,7 +6,8 @@ import { onDiscordConnect } from "./_actions/discord_connections";
 import { onNotionConnect } from "./_actions/notion_connections";
 import { onSlackConnect } from "./_actions/slack_connections";
 import { getUserData } from "./_actions/get_user";
-type Props = { searchParams?: { [key: string]: string | undefined } };
+
+type Props = { searchParams?: Promise<{ [key: string]: string | undefined }> };
 
 const page = async (props: Props) => {
   const {
@@ -28,7 +29,7 @@ const page = async (props: Props) => {
     bot_user_id,
     team_id,
     team_name,
-  } = props.searchParams ?? {
+  } = (await props.searchParams) ?? {
     webhook_id: "",
     webhook_name: "",
     webhook_url: "",

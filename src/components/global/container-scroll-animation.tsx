@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ContainerScroll = ({
   titleComponent,
@@ -53,14 +54,16 @@ export const ContainerScroll = ({
 
 export const Header = ({ translate, titleComponent }: any) => {
   return (
-    <motion.div
-      style={{
-        translateY: translate,
-      }}
-      className="div max-w-5xl mx-auto text-center"
-    >
-      {titleComponent}
-    </motion.div>
+    <Link href="/workflows">
+      <motion.div
+        style={{
+          translateY: translate,
+        }}
+        className="div max-w-5xl mx-auto text-center"
+      >
+        {titleComponent}
+      </motion.div>
+    </Link>
   );
 };
 

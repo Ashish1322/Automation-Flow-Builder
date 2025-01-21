@@ -9,8 +9,8 @@ import { BillingProvider } from "@/providers/billing-provider";
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fuzzie",
-  description: "Automate your workflow with fuzzie",
+  title: "Flowzy",
+  description: "Automate your workflow with Flowzy",
 };
 
 export default function RootLayout({

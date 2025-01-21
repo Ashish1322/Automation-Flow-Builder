@@ -29,7 +29,7 @@ export default function Home() {
                 </span>
               </Button>
               <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
-                Automate Your Work With Fuzzie
+                Automate Your Work With Flowzy
               </h1>
             </div>
           }
@@ -64,7 +64,7 @@ export default function Home() {
                 className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
               >
                 Get a monthly wave of credits to automate your tasks with ease.
-                Perfect for starters looking to dip their toes into Fuzzie's
+                Perfect for starters looking to dip their toes into Flowzy's
                 automation capabilities.
                 <ul className="my-4 flex flex-col gap-2">
                   <li className="flex items-center gap-2">

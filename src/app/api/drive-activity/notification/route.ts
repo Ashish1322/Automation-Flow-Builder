@@ -36,8 +36,10 @@ export async function POST(req: NextRequest) {
           if (flow.flowPath == null) return;
           const flowPath = JSON.parse(flow.flowPath!);
           let current = 0;
-          while (current < flowPath.length) {
+          while (flowPath.length > 0) {
+            console.log("Flow Path", flowPath);
             if (flowPath[current] == "Discord") {
+              console.log("ACCESS Discord");
               const discordMessage = await db.discordWebhook.findFirst({
                 where: {
                   userId: flow.userId,
@@ -46,6 +48,7 @@ export async function POST(req: NextRequest) {
                   url: true,
                 },
               });
+              console.log("ACCESS Discord Message : ", discordMessage);
               if (discordMessage) {
                 await postContentToWebHook(
                   flow.discordTemplate!,
@@ -118,7 +121,7 @@ export async function POST(req: NextRequest) {
               }
               break;
             }
-            current++;
+            console.log("Flow Path and Current", flowPath, current);
           }
 
           await db.user.update({

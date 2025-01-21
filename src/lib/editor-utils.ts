@@ -153,6 +153,7 @@ export const onNotionContent = (
   nodeConnection: ConnectionProviderProps,
   event: React.ChangeEvent<HTMLInputElement>
 ) => {
+  console.log("Notion", event.target.value);
   nodeConnection.setNotionNode((prev: any) => ({
     ...prev,
     content: event.target.value,

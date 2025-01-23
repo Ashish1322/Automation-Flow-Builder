@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flowzy: Automation Flow Builder  
 
-## Getting Started
+Flowzy is an intuitive automation flow builder that allows users to connect their favorite tools such as Slack, Discord, Notion, and Google Drive. Users can create automated workflows to trigger messages or actions in their respective channels based on the designed flow.  
 
-First, run the development server:
+## Features  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Tool Integration**: Seamless integration with Slack, Discord, Notion, Google Drive, and more.  
+- **Flow Builder**: Intuitive UI to design automation workflows using drag-and-drop functionality.  
+- **Triggers & Actions**: Set up custom triggers and define actions for each workflow.  
+- **Real-time Updates**: Changes to workflows are applied instantly and reflected in connected tools.  
+- **Secure Authentication**: Powered by Clerk for user authentication and secure login.  
+- **Billing Support**: Integration with Stripe for subscription management.  
+- **Responsive UI**: Fully responsive interface using Shadcn UI and Acentritiy UI components.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, Shadcn UI, Acentritiy UI  
+- **Backend**: PostgreSQL for database management  
+- **Authentication**: Clerk for user management and authentication  
+- **Flow Builder**: React-Flow for building and visualizing workflows  
+- **Billing**: Stripe integration for subscriptions and payments  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Screenshots  
 
-## Learn More
+![Flowzy Dashboard](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq2QksNSxGf_LcwRUMHoiz-7ul1NRvctPkcFrnt-pdxk-VHXmVlLkZ64RnFB2dbK8n2rJK6eoYAunSj9Jg00CmNyUbBCRJe6fXteXhdSwkLqP5SGCU3JGWpZ9WjfNx1tYgCTd18_t105vFOxIpAwq0P7VVZ8odTGagWAE78ho2GE57XpzDkR3CXoVt-w/w640-h344/Screenshot%202025-01-23%20at%209.43.38%E2%80%AFPM.png)  
+*Flowzy Dashboard with active integrations*  
 
-To learn more about Next.js, take a look at the following resources:
+![Flow Builder](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixN8PCDCss-060Xv43C__k9nr4dbYg5O83y_jWe0RWQ4MCwoqp5orWaq2vkkwJKS8HcTsSUIGvvHcoXvJvFWYVaUJUI7AfRPN6FScrWsyZQb7_TNGtLFEWXHu46YGPzu9Z7CMdOOdzHd8IlpeSVoIalBvHlQsZgpJBP-MA9X2dALOe95op3MxxZNvkCw/w640-h326/Screenshot%202025-01-23%20at%209.45.14%E2%80%AFPM.png)  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Flow Builder](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFo7wLUhvGJEwmbt8_5_n5q-mDpSy3sjZl42Z6G7b5Ns2axS1fr5_YYb8EQhAB3aPlyBE0t8GNzM8kll1Jug05ROoxQ_nmp_RYYYlvZh1j_z4amyefMPIE6NjWSv3v7aZDq-qYtoeuxNi7bILkOIZ5x6S3HDIAs_TzN0GLor6hcsUJuZ2G6a2hyQs46w/w640-h344/Screenshot%202025-01-23%20at%209.44.37%E2%80%AFPM.png)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Flow Builder](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfgWw_paFxU64Fj8r7NiYIXjk7QkEEllDyJ8Q1XkbGC3RoVDd2euJbbzS8p_2_FXnjzUk-HXye8j0KIm10mc6guMumVFG4fOTzvIDl3t60NVl7wpuQA_VRr_GajwiD6XnM2K0uOfFIjlSaoUP2uVElMHmMy8BZQ-i33RarNXfT9AXNmkUUa3cGCBDIZg/w640-h344/Screenshot%202025-01-23%20at%209.43.56%E2%80%AFPM.png)  
+*Drag-and-drop interface for designing workflows*  
